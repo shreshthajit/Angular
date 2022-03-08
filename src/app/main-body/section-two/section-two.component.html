@@ -1,0 +1,8 @@
+<div class="row  pt-4">
+    <div class="col-lg-4 pt-2">
+        <app-left-section (selectedName)="nameSearch = $event" (selectedStar)="starCnt=$event" (selectedPrice)="priceVal=$event"></app-left-section>
+    </div>
+    <div class="col-lg-8 ">
+        <app-right-section [namesearch]="nameSearch" [starsearch]="starCnt" [pricesearch]="priceVal"></app-right-section>
+    </div>
+</div>

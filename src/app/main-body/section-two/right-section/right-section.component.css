@@ -1,0 +1,21 @@
+ul {
+    list-style-type: none;
+}
+ 
+/* 
+.card {
+    display: flex;
+    flex-direction: row;
+}
+
+.card-img {
+    border: -1;
+}
+
+.card-block {
+    border: 0;
+}
+
+.card-img-last {
+    order: 1;
+} */
