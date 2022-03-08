@@ -1,0 +1,76 @@
+<div *ngFor="let item of Data | filter: namesearch">
+    <div class="py-2">
+        <mat-card>
+            <div class="content">
+                <div class="row wrap no-gutters">
+                    <div class="col-md-3 col-sm-12">
+                        <mat-card-header>
+                            <picture class="pt-4 ">
+                                <img mat-card-image [src]="item.card_image" alt=" Photo ">
+                            </picture>
+                        </mat-card-header>
+                    </div>
+                    <div class="col-md-5 col-sm-12">
+                        <div class="d-flex flex-column">
+                            <div class="pt-2">
+                                <ul>
+                                    <strong>{{ item.airportName }}</strong>
+                                    <p class="text-secondary ">{{ item.address }}</p>
+                                    <li>
+                                        <img src="assets/images/card_image/yellow_star.png " class="px-2 ">
+                                        <img src="assets/images/card_image/yellow_star.png " class="px-2 ">
+                                        <img src="assets/images/card_image/yellow_star.png " class="px-2 ">
+                                        <img src="assets/images/card_image/yellow_star.png " class="px-2 ">
+                                        <img src="assets/images/card_image/yellow_star.png " class="px-2 ">
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="p-2 ">
+                                <div class="d-flex flex-row ">
+                                    <!-- <i class="fa fa-map-marker-alt"></i> -->
+                                    <mat-icon class="ps-4 pt-2 " aria-hidden="false " aria-label="Example home icon ">add_box</mat-icon>
+                                    <div class="pt-2 ">
+                                        <ul>
+                                            <li>
+                                                <p class="text-secondary ">Add to compare</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!-- <i class="fa fa-map-marker fa-2x pt-2 ps-4"></i> -->
+                                    <mat-icon class="ps-4 pt-2 " aria-hidden="false " aria-label="Example home icon ">location_on</mat-icon>
+                                    <div class="pt-2 ">
+                                        <ul>
+                                            <li>
+                                                <p class="text-secondary">show on map</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="d-flex flex-column justify-content-end ">
+                            <div class="pt-2 ">
+                                <ul class="text-end ">
+                                    <li> <strong>{{item.costPerNight}}</strong></li>
+                                    <li class="text-secondary ">
+                                        {{ item.text1}}
+                                    </li>
+                                    <li class="text-secondary ">
+                                        Total price: {{item.totalPrice}}
+                                    </li>
+                                    <li>
+                                        <p class="text-secondary ">Inclusive taxes and fees</p>
+                                    </li>
+                                    <li class="pt-3 "><button type="button " class="btn btn-primary ">Select</button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </mat-card>
+    </div>
+</div>
