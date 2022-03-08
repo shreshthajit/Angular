@@ -1,0 +1,5 @@
+<app-filter-part-one (selectedStarSearch)="starAdded($event)" (selctedPriceSearch)="priceAdded($event)"></app-filter-part-one>
+<!-- <app-filter-part-two (selectedNameSearch)="newName = $event"></app-filter-part-two> -->
+<app-filter-part-two (selectedNameSearch)="nameAdded($event)">
+</app-filter-part-two>
+<!-- we must have to take the input into an event otherwise we can't pass data -->
