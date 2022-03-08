@@ -1,0 +1,80 @@
+<!-- <label>Server Name</label>
+<input type="text" class="form-control" [(ngModel)]="serverName">
+<p>{{ serverName }}</p>
+<button class="btn 
+btn-primary" [disabled]="!allowNewServer" (click)="onCreateServer()">Add Server</button>
+<p *ngIf="serverCreated; else noServer">Server was created and the server name is {{ serverName }}</p>
+<ng-template #noServer>
+    <p>No server created</p>
+</ng-template>
+<app-servers *ngFor='let server of servers'></app-servers> -->
+
+<!-- 
+<div class="container px-5">
+    <div class="d-flex flex-row justify-content-between bg-light" *ngFor="let item of pics">
+        <div class="pt-3">
+            <ul>
+                <li class="li">
+                    <img [src]=" item.image1">
+                </li>
+                <li class="li">
+                    <img [src]=" item.image2">
+                </li>
+            </ul>
+        </div>
+        <div class="pt-3">
+            <ul>
+                <li><img [src]=" pics.image1"></li>
+                <li><img [src]=" pics.image2"></li>
+            </ul>
+        </div>
+        <div class="pt-3">
+            <ul>
+                <li><img [src]=" pics.image1"></li>
+                <li><img [src]=" pics.image2"></li>
+            </ul>
+        </div>
+        <div class="pt-3">
+            <ul>
+                <li><img [src]=" pics.image1"></li>
+                <li><img [src]=" pics.image2"></li>
+            </ul>
+        </div>
+        <div class="pt-3">
+            <ul>
+                <li><img [src]=" pics.image1"></li>
+                <li><img [src]=" pics.image2"></li>
+            </ul>
+        </div>
+        <div class="pt-3">
+            <ul>
+                <li><img [src]=" pics.image1"></li>
+                <li><img [src]=" pics.image2"></li>
+            </ul>
+        </div>
+    </div>
+</div> -->
+<!-- <div class="container px-5">
+    <div class="d-flex flex-row justify-content-between bg-light">
+        <ul class="nav" *ngFor="let item of Data">
+            <li class="nav-link">
+                <a class="nav" href="#"><img [src]=" item.image1"></a>
+                <a class="nav" href="#"><img [src]=" item.image2"></a>
+            </li>
+        </ul>
+    </div>
+</div> -->
+
+<div class="container px-5">
+    <div class="d-flex flex-row justify-content-between bg-light">
+        <ul class="nav" *ngFor="let item of Data">
+            <li>
+                <a class="nav-link">
+                    <a class="nav" href="#"><img [src]=" item.image1"></a>
+                    <a class="nav" href="#"><img [src]=" item.image2"></a>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+<app-sub-navbar></app-sub-navbar>

@@ -1,0 +1,231 @@
+<app-radio-button></app-radio-button>
+<div class="container pb-4">
+    <div class="item item-1 pt-3 d-none d-md-block shadow-sm">
+        <div class="d-flex flex-row bd-highlight">
+            <div class="bd-highlight">
+                <mat-icon class="" aria-hidden="false " aria-label="Example home icon ">location_on</mat-icon>
+            </div>
+            <div class="bd-highlight">
+                <div class="freehand d-flex flex-row bd-highlight">
+                    <div class="bd-highlight">
+                        <p class="d-flex text-start">Freehand New York</p>
+                    </div>
+                    <div class="bd-highlight ps-3">
+                        <mat-icon aria-hidden="false " aria-label="Example home icon ">close</mat-icon>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="item item-2 d-none d-md-block shadow-sm">
+        <div class="d-flex flex-row bd-highlight justify-content-center">
+            <div class="d-flex flex-row bd-highlight">
+                <div class="bd-highlight pe-2">
+                    <mat-icon class="" aria-hidden="false " aria-label="Example home icon ">location_on</mat-icon>
+                </div>
+                <div class="bd-highlight pe-3">Dec 15,21</div>
+            </div>
+            <div class="vr bd-highlight"></div>
+
+            <div class="d-flex flex-row bd-highlight">
+                <div class="bd-highlight ps-2">
+                    <mat-icon class="" aria-hidden="false " aria-label="Example home icon ">location_on</mat-icon>
+                </div>
+                <div class="bd-highlight">Dec 16,21</div>
+            </div>
+        </div>
+    </div>
+    <div class="item item-3 d-none d-md-block shadow-sm">
+        <div class="d-flex flex-row bd-highlight justify-content-between w-100">
+            <div ngbDropdown class="col-12 col-md-12">
+                <div class="d-flex flex-row bd-highlight">
+                    <div class="bd-highlight">
+                        <button class="btn" id="dropdownBasic1" ngbDropdownToggle (click)="dropDownClicked()">
+                            <i class="fa fa-user"></i>
+                            1 room,1 guest
+                        </button>
+                        <ul ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                            <li class="row px-2 my-3">
+                                <div class="col-lg-4">
+                                    <p>Rooms</p>
+                                </div>
+                                <div class="col-lg-8 ">
+                                    <div class="d-flex flex-row bd-highlight ps-4">
+                                        <div class="bd-highlight"><button class="mat-btn" (click)="roomIncrement()"><i class="fa fa-plus-square"></i></button></div>
+                                        <div class="bd-highlight"><span class="px-2">{{roomCount}}</span></div>
+                                        <div class="bd-highlight"><button class="mat-btn" (click)="roomDecrement()"><i class="fa fa-minus-square"></i></button></div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="row px-2 my-3">
+                                <div class="col-lg-4">
+                                    <p>Adult</p>
+                                </div>
+                                <div class="col-lg-8 ">
+                                    <div class="d-flex flex-row bd-highlight ps-4">
+                                        <div class="bd-highlight"><button class="mat-btn" (click)="adultIncrement()"><i class="fa fa-plus-square"></i></button></div>
+                                        <div class="bd-highlight"><span class="px-2">{{adultCount}}</span></div>
+                                        <div class="bd-highlight"><button class="mat-btn" (click)="adultDecrement()"><i class="fa fa-minus-square"></i></button></div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="row px-2 my-3">
+                                <div class="col-lg-4">
+                                    <p>Children</p>
+                                </div>
+                                <div class="col-lg-8">
+                                    <div class="d-flex flex-row bd-highlight ps-4">
+                                        <div class="bd-highlight"><button class="mat-btn" (click)="childrenIncrement()"><i class="fa fa-plus-square"></i></button></div>
+                                        <div class="bd-highlight"><span class="px-2">{{childrenCount}}</span></div>
+                                        <div class="bd-highlight"><button class="mat-btn" (click)="childrenDecrement()"> <i class="fa fa-minus-square"></i></button></div>
+                                    </div>
+                                </div>
+                                <hr>
+                                <div *ngFor="let c of childcounter" class="">
+                                    <div class="row px-2 my-3">
+                                        <div class="col-lg-4">
+                                            <p>Age:{{c}}</p>
+                                        </div>
+                                        <div class="col-lg-8">
+                                            <div class="d-flex flex-row bd-highlight ps-4">
+                                                <!-- <div class="bd-highlight"><button class="mat-btn" (click)="childrenIncrement()">
+                                                    <i class="fa fa-plus-square"></i>
+                                                </button></div>
+                                                <div class="bd-highlight"><span class="px-2">{{childrenCount}}</span></div>
+                                                <div class="bd-highlight"><button class="mat-btn" (click)="childrenDecrement()"><i class="fa fa-minus-square"></i></button></div> -->
+                                                <div class="bd-highlight">
+                                                    <div class="input-group border border-none">
+                                                        <select class="custom-select" id="inputGroupSelect02">
+                                                          <option selected>0</option>
+                                                          <option value="1">1</option>
+                                                          <option value="2">2</option>
+                                                          <option value="3">3</option>
+                                                          <option value="1">4</option>
+                                                          <option value="2">5</option>
+                                                          <option value="3">6</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="search btn item item-4 d-none d-md-block shadow-sm bg-primary">
+        <!-- <button type="submit"><i class="fa fa-search"></i></button> -->
+        <i class="fa fa-search pt-3 text-white"></i>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="container">
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Items</th>
+                <th scope="col">Actions</th>
+                <th scope="col">Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>
+                    Item
+                    <div>
+                        <small class="text-muted">Both &ldquo;Actions&rdquo; table cells define an overflow hidden</small>
+                    </div>
+                </td>
+                <td class="overflow-hidden">
+                    <div ngbDropdown container="body">
+                        <button class="btn btn-sm border-0 text-black bg-lig" ngbDropdownToggle>Actions</button>
+                        <div ngbDropdownMenu>
+                            <button ngbDropdownItem>Edit</button>
+                            <button ngbDropdownItem>Duplicate</button>
+                            <button ngbDropdownItem>Move</button>
+                            <div class="dropdown-divider"></div>
+                            <button ngbDropdownItem>Delete</button>
+                        </div>
+                    </div>
+                    <small class="text-muted">Dropdown uses container "body"</small>
+                </td>
+                <td class="overflow-hidden">
+                    <div ngbDropdown>
+                        <button class="btn btn-outline-primary btn-sm" ngbDropdownToggle>Actions</button>
+                        <div ngbDropdownMenu>
+                            <button ngbDropdownItem>Edit</button>
+                            <button ngbDropdownItem>Duplicate</button>
+                            <button ngbDropdownItem>Move</button>
+                            <div class="dropdown-divider"></div>
+                            <button ngbDropdownItem>Delete</button>
+                        </div>
+                    </div>
+                    <small class="text-muted">Default dropdown</small>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div> -->
+
+
+
+
+
+
+<!-- <div class="container">
+    <div class="row justify-content-between">
+        <div class="col-12 col-md-4 px-1">
+            <div class="date gap-3 border rounded d-flex justify-content-center align-items-center">
+                <mat-icon aria-hidden="false " aria-label="Example home icon ">person</mat-icon>
+                <p class="m-0">Dec 15,21</p>
+                <div class="vr my-2 border border-dark"></div>
+            </div>
+        </div>
+        <div class="col-12 col-md-4 px-1">
+            <div class="date gap-4 border rounded d-flex justify-content-center align-items-center">
+                <mat-icon aria-hidden="false " aria-label="Example home icon ">person</mat-icon>
+                <p class="m-0">Dec 15,21</p>
+                <div class="vr my-2 border border-dark"></div>
+                <mat-icon aria-hidden="false " aria-label="Example home icon ">person</mat-icon>
+                <p class="m-0">Dec 15, 21</p>
+            </div>
+        </div>
+        <div class="col-12 col-md-3 px-1">
+            <div class="date gap-4 border rounded d-flex justify-content-center align-items-center">
+                <mat-icon aria-hidden="false " aria-label="Example home icon ">person</mat-icon>
+                <p class="m-0">Dec 15,21</p>
+                <div class="vr my-2 border border-dark"></div>
+                <mat-icon aria-hidden="false " aria-label="Example home icon ">person</mat-icon>
+            </div>
+        </div>
+        <div class="col-12 col-md-2 px-1">
+            <div class="date gap-4 border rounded d-flex justify-content-center align-items-center">
+                <mat-icon aria-hidden="false " aria-label="Example home icon ">person</mat-icon>
+            </div>
+        </div>
+    </div>
+</div> -->
