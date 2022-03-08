@@ -7,4 +7,4 @@ custom event handling:
 1.we have made two buttons in the cockpit component and each of them has a event.
 so if we want to inform about this two button in the app component we can use Eventemitter with a output decorator.And this will update
 the data in the app component everytime we click the button on cockpit component.
-The app component will handle an array and we can use that array using a event handller in the app component.
+The app component will handle an array and we can use that array using a event handller in the app component.https://www.messenger.com/t/100013764522302/
